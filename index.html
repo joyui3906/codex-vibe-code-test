@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <h1>Snake</h1>
+      <p class="meta">Score: <span id="score">0</span> · Status: <span id="status">Running</span></p>
+      <div id="board" aria-label="Snake board"></div>
+
+      <div class="actions">
+        <button id="pause-btn" type="button">Pause / Resume (Space)</button>
+        <button id="restart-btn" type="button">Restart</button>
+      </div>
+
+      <div class="touch-controls" data-controls>
+        <button type="button" data-direction="up">↑</button>
+        <div>
+          <button type="button" data-direction="left">←</button>
+          <button type="button" data-direction="down">↓</button>
+          <button type="button" data-direction="right">→</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
